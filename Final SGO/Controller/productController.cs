@@ -1,4 +1,5 @@
 ﻿using Final_SGO.Models;
+using Final_SGO.Views.product;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -44,6 +45,26 @@ namespace Final_SGO.Controller
             }
             return products;
         }
-        public static 
+        public void AddProduct(string Name, decimal Price, string Provider, string Material)
+        {
+            string query = "insert into Products(Product_Name,Product_Price,Product_Provider,Product_Material) values" + "(@name, @price, @provider, @material)";
+            using (SqlConnection connection = dataAccessObject.GetConnection())
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@name", Name);
+                command.Parameters.AddWithValue("@price", Price);
+                command.Parameters.AddWithValue("@provider", Provider);
+                command.Parameters.AddWithValue("@material", Material);
+                try
+                {
+                    command.ExecuteNonQuery();
+                    dataAccessObject.CloseConnection();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Hay un error en la db " + ex.Message);
+                }
+            }
+        }
     }
 }

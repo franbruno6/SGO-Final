@@ -9,3 +9,4 @@ D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final SGO
 D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final SGO.pdb
 D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final_SGO.Views.mainView.resources
 D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final_SGO.Views.productView.resources
+D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final_SGO.Views.product.addProductView.resources
