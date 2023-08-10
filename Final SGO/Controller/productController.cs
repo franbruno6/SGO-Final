@@ -67,10 +67,10 @@ namespace Final_SGO.Controller
                 }
             }
         }
-        public void ShowProductList(DataGridView dataGrid)
+        public void ShowProductList(DataGridView dataGridView)
         {
             productController productController = new productController();
-            dataGrid.DataSource = productController.GetProductList();
+            dataGridView.DataSource = productController.GetProductList();
         }
     }
 }

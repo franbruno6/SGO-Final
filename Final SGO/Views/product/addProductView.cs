@@ -13,6 +13,7 @@ namespace Final_SGO.Views.product
 {
     public partial class addProductView : Form
     {
+        private productController productController = new productController();
         public addProductView()
         {
             InitializeComponent();
@@ -20,7 +21,6 @@ namespace Final_SGO.Views.product
 
         private void button1_Click(object sender, EventArgs e)
         {
-            productController productController = new productController();
             try
             {
                 productController.AddProduct(txtName.Text, decimal.Parse(txtPrice.Text), txtProvider.Text, txtMaterial.Text);

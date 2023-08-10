@@ -25,26 +25,23 @@ namespace Final_SGO.Views
         {
             productController.ShowProductList(dataGridProducts);
         }
-
         private static addProductView addProductChild;
         private void btnAddProduct_Click(object sender, EventArgs e)
         { 
+            if (addProductChild == null || addProductChild.IsDisposed)
             {
-                if (addProductChild == null || addProductChild.IsDisposed)
+                addProductChild = new addProductView();
+                addProductChild.MdiParent = mainView.ActiveForm;
+                addProductChild.Show();
+                //addProductChild.FormBorderStyle = FormBorderStyle.None;
+                addProductChild.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                if (addProductChild.WindowState == FormWindowState.Minimized)
                 {
-                    addProductChild = new addProductView();
-                    addProductChild.MdiParent = mainView.ActiveForm;
-                    addProductChild.Show();
-                    //addProductChild.FormBorderStyle = FormBorderStyle.None;
-                    addProductChild.Dock = DockStyle.Fill;
-                }
-                else
-                {
-                    if (addProductChild.WindowState == FormWindowState.Minimized)
-                    {
-                        addProductChild.WindowState = FormWindowState.Normal;
-                        addProductChild.BringToFront();
-                    }
+                    addProductChild.WindowState = FormWindowState.Normal;
+                    addProductChild.BringToFront();
                 }
             }
         }
