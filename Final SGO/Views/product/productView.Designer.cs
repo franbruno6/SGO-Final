@@ -28,21 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridProducts = new System.Windows.Forms.DataGridView();
             this.lblProductHeader = new System.Windows.Forms.Label();
             this.btnAddProduct = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridProducts)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridProducts
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 99);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(580, 296);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridProducts.Location = new System.Drawing.Point(12, 99);
+            this.dataGridProducts.Name = "dataGridProducts";
+            this.dataGridProducts.ReadOnly = true;
+            this.dataGridProducts.Size = new System.Drawing.Size(580, 296);
+            this.dataGridProducts.TabIndex = 1;
             // 
             // lblProductHeader
             // 
@@ -66,39 +65,26 @@
             this.btnAddProduct.UseVisualStyleBackColor = true;
             this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
-            // btnRefresh
-            // 
-            this.btnRefresh.AutoSize = true;
-            this.btnRefresh.Location = new System.Drawing.Point(492, 70);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(100, 23);
-            this.btnRefresh.TabIndex = 4;
-            this.btnRefresh.Text = "Actualizar";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
             // productView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(604, 407);
-            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnAddProduct);
             this.Controls.Add(this.lblProductHeader);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridProducts);
             this.Name = "productView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridProducts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridProducts;
         private System.Windows.Forms.Label lblProductHeader;
         private System.Windows.Forms.Button btnAddProduct;
-        private System.Windows.Forms.Button btnRefresh;
     }
 }

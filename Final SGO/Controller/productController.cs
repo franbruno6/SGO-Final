@@ -7,6 +7,7 @@ using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using static Final_SGO.Models.productsModel;
 
 namespace Final_SGO.Controller
@@ -65,6 +66,11 @@ namespace Final_SGO.Controller
                     throw new Exception("Hay un error en la db " + ex.Message);
                 }
             }
+        }
+        public void ShowProductList(DataGridView dataGrid)
+        {
+            productController productController = new productController();
+            dataGrid.DataSource = productController.GetProductList();
         }
     }
 }

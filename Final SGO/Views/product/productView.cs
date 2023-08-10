@@ -15,11 +15,15 @@ namespace Final_SGO.Views
 {
     public partial class productView : Form
     {
+        private productController productController = new productController();
         public productView()
         {
             InitializeComponent();
-            productController productController= new productController();
-            dataGridView1.DataSource = productController.GetProductList();
+            this.Activated += productView_Activated;
+        }
+        private void productView_Activated(object sender, EventArgs e)
+        {
+            productController.ShowProductList(dataGridProducts);
         }
 
         private static addProductView addProductChild;
@@ -45,11 +49,6 @@ namespace Final_SGO.Views
             }
         }
 
-        private void btnRefresh_Click(object sender, EventArgs e)
-        {
-            productController productController= new productController();
-            dataGridView1.DataSource = productController.GetProductList();
-        }
     }
 }
 
