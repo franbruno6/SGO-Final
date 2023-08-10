@@ -1,0 +1,11 @@
+D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\bin\Debug\Final SGO.exe.config
+D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\bin\Debug\Final SGO.exe
+D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\bin\Debug\Final SGO.pdb
+D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final SGO.csproj.AssemblyReference.cache
+D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final_SGO.Properties.Resources.resources
+D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final SGO.csproj.GenerateResource.cache
+D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final SGO.csproj.CoreCompileInputs.cache
+D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final SGO.exe
+D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final SGO.pdb
+D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final_SGO.Views.mainView.resources
+D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final_SGO.Views.productView.resources
