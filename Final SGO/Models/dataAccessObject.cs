@@ -10,7 +10,10 @@ namespace Final_SGO.Models
 {
     internal class dataAccessObject
     {
-        private static readonly string connectionString = "Data Source=DESKTOP-1C3TO16;Initial Catalog = Sistema_gestion_obra; Integrated Security = True";
+        //Connection String PC
+        //private static readonly string connectionString = "Data Source=DESKTOP-1C3TO16;Initial Catalog = Sistema_gestion_obra; Integrated Security = True";
+        //Connection String Notebook
+        private static readonly string connectionString = "Data Source=DESKTOP-IMHLUUF;Initial Catalog=Sistema_gestion_obra;Integrated Security=True";
         private static SqlConnection connection;
         public static SqlConnection GetConnection()
         {

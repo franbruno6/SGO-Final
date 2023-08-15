@@ -10,3 +10,16 @@ D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final SGO
 D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final_SGO.Views.mainView.resources
 D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final_SGO.Views.productView.resources
 D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final_SGO.Views.product.addProductView.resources
+C:\Users\franb\Documents\Fran\Ingenieria de Software\Final SGO\SGO-Final\Final SGO\bin\Debug\Final SGO.exe.config
+C:\Users\franb\Documents\Fran\Ingenieria de Software\Final SGO\SGO-Final\Final SGO\bin\Debug\Final SGO.exe
+C:\Users\franb\Documents\Fran\Ingenieria de Software\Final SGO\SGO-Final\Final SGO\bin\Debug\Final SGO.pdb
+C:\Users\franb\Documents\Fran\Ingenieria de Software\Final SGO\SGO-Final\Final SGO\obj\Debug\Final SGO.csproj.AssemblyReference.cache
+C:\Users\franb\Documents\Fran\Ingenieria de Software\Final SGO\SGO-Final\Final SGO\obj\Debug\Final SGO.csproj.SuggestedBindingRedirects.cache
+C:\Users\franb\Documents\Fran\Ingenieria de Software\Final SGO\SGO-Final\Final SGO\obj\Debug\Final_SGO.Properties.Resources.resources
+C:\Users\franb\Documents\Fran\Ingenieria de Software\Final SGO\SGO-Final\Final SGO\obj\Debug\Final_SGO.Views.mainView.resources
+C:\Users\franb\Documents\Fran\Ingenieria de Software\Final SGO\SGO-Final\Final SGO\obj\Debug\Final_SGO.Views.product.addProductView.resources
+C:\Users\franb\Documents\Fran\Ingenieria de Software\Final SGO\SGO-Final\Final SGO\obj\Debug\Final_SGO.Views.productView.resources
+C:\Users\franb\Documents\Fran\Ingenieria de Software\Final SGO\SGO-Final\Final SGO\obj\Debug\Final SGO.csproj.GenerateResource.cache
+C:\Users\franb\Documents\Fran\Ingenieria de Software\Final SGO\SGO-Final\Final SGO\obj\Debug\Final SGO.csproj.CoreCompileInputs.cache
+C:\Users\franb\Documents\Fran\Ingenieria de Software\Final SGO\SGO-Final\Final SGO\obj\Debug\Final SGO.exe
+C:\Users\franb\Documents\Fran\Ingenieria de Software\Final SGO\SGO-Final\Final SGO\obj\Debug\Final SGO.pdb
