@@ -47,7 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\productController.cs" />
-    <Compile Include="Models\productsModel.cs" />
+    <Compile Include="Entitys\productsEntity.cs" />
+    <Compile Include="Models\productDAO.cs" />
     <Compile Include="Models\dataAccessObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

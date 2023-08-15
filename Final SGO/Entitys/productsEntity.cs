@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Final_SGO.Models
+namespace Final_SGO.Entitys
 {
-    public class productsModel
+    public class productsEntity
     {
         public class Product
         {
