@@ -37,5 +37,10 @@ namespace Final_SGO.Views
                 }
             }
         }
+
+        private void btnSignOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

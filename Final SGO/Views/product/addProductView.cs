@@ -21,14 +21,18 @@ namespace Final_SGO.Views.product
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            try
+            DialogResult result = MessageBox.Show("¡Estas seguro de continuar?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
             {
-                productController.AddProduct(txtName.Text, decimal.Parse(txtPrice.Text), txtProvider.Text, txtMaterial.Text);
-                this.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ocurrio un error al guardar: " + ex.Message);
+                try
+                {
+                    productController.AddProduct(txtName.Text, decimal.Parse(txtPrice.Text), txtProvider.Text, txtMaterial.Text);
+                    this.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ocurrio un error al guardar: " + ex.Message);
+                }
             }
         }
     }
