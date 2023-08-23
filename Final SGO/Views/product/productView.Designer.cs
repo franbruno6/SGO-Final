@@ -32,6 +32,7 @@
             this.lblProductHeader = new System.Windows.Forms.Label();
             this.btnAddProduct = new System.Windows.Forms.Button();
             this.btnEditProduct = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridProducts)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,11 +80,23 @@
             this.btnEditProduct.UseVisualStyleBackColor = true;
             this.btnEditProduct.Click += new System.EventHandler(this.btnEditProduct_Click);
             // 
+            // btnDelete
+            // 
+            this.btnDelete.AutoSize = true;
+            this.btnDelete.Location = new System.Drawing.Point(224, 63);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(100, 23);
+            this.btnDelete.TabIndex = 5;
+            this.btnDelete.Text = "Eliminar Producto";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // productView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(604, 407);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEditProduct);
             this.Controls.Add(this.btnAddProduct);
             this.Controls.Add(this.lblProductHeader);
@@ -102,5 +115,6 @@
         private System.Windows.Forms.Label lblProductHeader;
         private System.Windows.Forms.Button btnAddProduct;
         private System.Windows.Forms.Button btnEditProduct;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

@@ -21,7 +21,7 @@ namespace Final_SGO.Controller
         {
             List<Product> products = new List<Product>();
             string query = "select Product_Id,Product_Name,Product_Price,Product_Provider,Product_Material from Products";
-            productDAO.productListConnection(query, products);
+            productDAO.productListGet(query, products);
             return products;
         }
         public void ShowProductList(DataGridView dataGridView)
@@ -39,9 +39,10 @@ namespace Final_SGO.Controller
             string query = "update Products " + "set Product_Name=@name, Product_Price=@price, Product_Provider=@provider, Product_Material=@material " + "where Product_Id=@id";
             productDAO.productUpdate(query, id, name, price, provider, material);
         }
-        public void DeleteProduct(string Name)
+        public void DeleteProduct(int id)
         {
-
+            string query = "delete from Products " + "where Product_Id=@id";
+            productDAO.productDelete(query, id);
         }
         public int? GetProductId(DataGridView dataGridView)
         {

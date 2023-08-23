@@ -11,7 +11,7 @@ namespace Final_SGO.Models
 {
     public class productDAO
     {
-        public void productListConnection(string query, List<Product> products)
+        public void productListGet(string query, List<Product> products)
         {
             using (SqlConnection connection = dataAccessObject.GetConnection())
             {
@@ -104,6 +104,22 @@ namespace Final_SGO.Models
                 catch (Exception ex)
                 {
                     throw new Exception("Hay un error en la db " + ex.Message);
+                }
+            }
+        }
+        public void productDelete(string query, int id)
+        {
+            using (SqlConnection connection = dataAccessObject.GetConnection())
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@id", id);
+                try
+                {
+                    command.ExecuteNonQuery();
+                    dataAccessObject.CloseConnection();
+                }
+                catch(Exception ex) {
+                    throw new Exception(ex.Message);
                 }
             }
         }

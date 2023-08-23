@@ -72,9 +72,28 @@ namespace Final_SGO.Views
                     }
                 }
                 
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
-                throw new Exception("Hay un error y pUNTO " + ex.Message);
+                throw new Exception(ex.Message);
+            }
+        }
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int productId = (int)productController.GetProductId(dataGridProducts);
+                Product Product = productController.GetProduct(productId);
+                DialogResult result = MessageBox.Show("¿Estas seguro de eliminar el producto?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    productController.DeleteProduct(productId);
+                    productController.ShowProductList(dataGridProducts);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
     }
