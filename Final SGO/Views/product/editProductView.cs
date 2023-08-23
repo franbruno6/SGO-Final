@@ -8,28 +8,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Final_SGO.Entitys.productsEntity;
 
 namespace Final_SGO.Views.product
 {
-    public partial class addProductView : Form
+    public partial class editProductView : Form
     {
         private productController productController = new productController();
-        public addProductView()
+        public editProductView(Product product)
         {
             InitializeComponent();
+            productController.ShowValues(product, txtId, txtName, txtPrice, txtProvider, txtMaterial);
         }
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            try
-            {
-                productController.AddProduct(txtName.Text, decimal.Parse(txtPrice.Text), txtProvider.Text, txtMaterial.Text);
-                this.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ocurrio un error al guardar: " + ex.Message);
-            }
+            productController.EditProduct(int.Parse(txtId.Text), txtName.Text, decimal.Parse(txtPrice.Text), txtProvider.Text, txtMaterial.Text);
+            this.Close();
         }
     }
 }

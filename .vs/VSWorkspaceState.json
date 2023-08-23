@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Final SGO",
-    "\\Final SGO\\Controller"
+    "\\Final SGO\\Controller",
+    "\\Final SGO\\Views"
   ],
-  "SelectedNode": "\\Final SGO\\Controller\\productController.cs",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }

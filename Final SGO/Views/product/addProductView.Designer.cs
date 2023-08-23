@@ -33,7 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAccept = new System.Windows.Forms.Button();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtProvider = new System.Windows.Forms.TextBox();
@@ -48,7 +48,7 @@
             this.lblAddProductHeader.Name = "lblAddProductHeader";
             this.lblAddProductHeader.Size = new System.Drawing.Size(703, 60);
             this.lblAddProductHeader.TabIndex = 3;
-            this.lblAddProductHeader.Text = "Agregar Productos";
+            this.lblAddProductHeader.Text = "Agregar Producto";
             this.lblAddProductHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblName
@@ -91,15 +91,15 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Precio";
             // 
-            // button1
+            // btnAccept
             // 
-            this.button1.Location = new System.Drawing.Point(458, 83);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAccept.Location = new System.Drawing.Point(458, 83);
+            this.btnAccept.Name = "btnAccept";
+            this.btnAccept.Size = new System.Drawing.Size(75, 23);
+            this.btnAccept.TabIndex = 8;
+            this.btnAccept.Text = "Aceptar";
+            this.btnAccept.UseVisualStyleBackColor = true;
+            this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
             // txtName
             // 
@@ -133,12 +133,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(703, 450);
+            this.ClientSize = new System.Drawing.Size(703, 338);
             this.Controls.Add(this.txtMaterial);
             this.Controls.Add(this.txtProvider);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtName);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAccept);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -158,7 +158,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAccept;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.TextBox txtProvider;

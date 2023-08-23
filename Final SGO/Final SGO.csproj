@@ -58,6 +58,12 @@
     <Compile Include="Views\product\addProductView.Designer.cs">
       <DependentUpon>addProductView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\product\editProductView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\product\editProductView.Designer.cs">
+      <DependentUpon>editProductView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\product\productView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\product\addProductView.resx">
       <DependentUpon>addProductView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\product\editProductView.resx">
+      <DependentUpon>editProductView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\product\productView.resx">
       <DependentUpon>productView.cs</DependentUpon>

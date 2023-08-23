@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Final_SGO.Entitys.productsEntity;
 
 namespace Final_SGO.Views
 {
@@ -25,7 +26,7 @@ namespace Final_SGO.Views
         {
             productController.ShowProductList(dataGridProducts);
         }
-        private static addProductView addProductChild;
+        private addProductView addProductChild;
         private void btnAddProduct_Click(object sender, EventArgs e)
         { 
             if (addProductChild == null || addProductChild.IsDisposed)
@@ -46,6 +47,36 @@ namespace Final_SGO.Views
             }
         }
 
+        private editProductView editProductChild;
+        private void btnEditProduct_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int productId = (int)productController.GetProductId(dataGridProducts);
+                Product product = productController.GetProduct(productId);
+                if (editProductChild == null || editProductChild.IsDisposed)
+                {
+                    
+                    editProductChild = new editProductView(product);
+                    editProductChild.MdiParent = mainView.ActiveForm;
+                    editProductChild.Show();
+                    //editProductChild.FormBorderStyle = FormBorderStyle.None;
+                    editProductChild.Dock = DockStyle.Fill;
+                }
+                else
+                {
+                    if (editProductChild.WindowState == FormWindowState.Minimized)
+                    {
+                        editProductChild.WindowState = FormWindowState.Normal;
+                        editProductChild.BringToFront();
+                    }
+                }
+                
+            }catch (Exception ex)
+            {
+                throw new Exception("Hay un error y pUNTO " + ex.Message);
+            }
+        }
     }
 }
 
