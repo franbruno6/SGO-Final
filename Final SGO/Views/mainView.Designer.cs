@@ -36,6 +36,7 @@
             this.btnProducts = new System.Windows.Forms.Button();
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnUsers = new System.Windows.Forms.Button();
             this.pnlMenu.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             this.SuspendLayout();
@@ -43,6 +44,7 @@
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.pnlMenu.Controls.Add(this.btnUsers);
             this.pnlMenu.Controls.Add(this.btnSignOut);
             this.pnlMenu.Controls.Add(this.button3);
             this.pnlMenu.Controls.Add(this.button2);
@@ -154,6 +156,22 @@
             this.label1.Text = "**LOGO**";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnUsers
+            // 
+            this.btnUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnUsers.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnUsers.FlatAppearance.BorderSize = 0;
+            this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsers.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
+            this.btnUsers.ForeColor = System.Drawing.Color.White;
+            this.btnUsers.Location = new System.Drawing.Point(0, 455);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.Size = new System.Drawing.Size(160, 39);
+            this.btnUsers.TabIndex = 6;
+            this.btnUsers.Text = "**Usuarios**";
+            this.btnUsers.UseVisualStyleBackColor = false;
+            this.btnUsers.Visible = false;
+            // 
             // mainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -180,5 +198,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnUsers;
     }
 }

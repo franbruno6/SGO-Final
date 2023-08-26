@@ -47,11 +47,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\productController.cs" />
+    <Compile Include="Entitys\budgetEntity.cs" />
+    <Compile Include="Entitys\clientEntity.cs" />
+    <Compile Include="Entitys\personEntity.cs" />
+    <Compile Include="Entitys\productLineEntity.cs" />
     <Compile Include="Entitys\productsEntity.cs" />
+    <Compile Include="Entitys\userEntity.cs" />
     <Compile Include="Models\productDAO.cs" />
     <Compile Include="Models\dataAccessObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\logInView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\logInView.Designer.cs">
+      <DependentUpon>logInView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\product\addProductView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +96,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\logInView.resx">
+      <DependentUpon>logInView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\mainView.resx">
       <DependentUpon>mainView.cs</DependentUpon>
     </EmbeddedResource>
