@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Final_SGO.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,15 @@ namespace Final_SGO.Views
 {
     public partial class logInView : Form
     {
+        private logInController logInController = new logInController();
         public logInView()
         {
             InitializeComponent();
+        }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            logInController.LogIn(txtUser.Text, txtPassword.Text);
         }
     }
 }
