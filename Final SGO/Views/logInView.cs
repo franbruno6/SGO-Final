@@ -21,7 +21,15 @@ namespace Final_SGO.Views
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-            logInController.LogIn(txtUser.Text, txtPassword.Text);
+            bool logInResult = logInController.LogIn(txtUser.Text, txtPassword.Text);
+            if (logInResult == true )
+            {
+                DialogResult = DialogResult.OK;
+            }
+            else
+            {
+                MessageBox.Show("Error al iniciar sesión. Por favor intentelo de nuevo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

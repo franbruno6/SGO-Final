@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Controller\logInController.cs" />
     <Compile Include="Controller\productController.cs" />
+    <Compile Include="Controller\userController.cs" />
     <Compile Include="Entitys\budgetEntity.cs" />
     <Compile Include="Entitys\clientEntity.cs" />
     <Compile Include="Entitys\personEntity.cs" />
@@ -56,6 +57,10 @@
     <Compile Include="Entitys\userEntity.cs" />
     <Compile Include="Models\productDAO.cs" />
     <Compile Include="Models\dataAccessObject.cs" />
+    <Compile Include="Models\userDAO.cs" />
+    <Compile Include="Permission\IPermission.cs" />
+    <Compile Include="Permission\PermissionGroup.cs" />
+    <Compile Include="Permission\SimplePermission.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\logInView.cs">

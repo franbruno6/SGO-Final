@@ -24,3 +24,4 @@ C:\Users\franb\Documents\Fran\Ingenieria de Software\Final SGO\SGO-Final\Final S
 C:\Users\franb\Documents\Fran\Ingenieria de Software\Final SGO\SGO-Final\Final SGO\obj\Debug\Final SGO.exe
 C:\Users\franb\Documents\Fran\Ingenieria de Software\Final SGO\SGO-Final\Final SGO\obj\Debug\Final SGO.pdb
 D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final_SGO.Views.product.editProductView.resources
+D:\UAI\Ingeniería de Software\Tesis SGO\Final SGO\Final SGO\obj\Debug\Final_SGO.Views.logInView.resources

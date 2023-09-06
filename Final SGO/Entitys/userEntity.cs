@@ -9,10 +9,11 @@ namespace Final_SGO.Entitys
 {
     public class userEntity
     {
-        public class User : Person
+        public class User
         {
+            public int Id { get; set; }
             public string UserName { get; set; }
-            private string Password { get; set; }
+            public string Password { get; set; }
         }
     }
 }

@@ -48,7 +48,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(610, 86);
+            this.panel1.Size = new System.Drawing.Size(634, 86);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -58,7 +58,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(610, 86);
+            this.label1.Size = new System.Drawing.Size(634, 86);
             this.label1.TabIndex = 1;
             this.label1.Text = "Log In";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -74,7 +74,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 86);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(610, 364);
+            this.panel2.Size = new System.Drawing.Size(634, 375);
             this.panel2.TabIndex = 1;
             // 
             // btnCancel
@@ -107,7 +107,7 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(215, 107);
+            this.label3.Location = new System.Drawing.Point(190, 107);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 2;
@@ -125,7 +125,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(215, 62);
+            this.label2.Location = new System.Drawing.Point(190, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 0;
@@ -136,10 +136,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(610, 450);
+            this.ClientSize = new System.Drawing.Size(634, 461);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "logInView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "logInView";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

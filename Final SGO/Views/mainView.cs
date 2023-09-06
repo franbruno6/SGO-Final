@@ -42,5 +42,18 @@ namespace Final_SGO.Views
         {
             this.Close();
         }
+
+        private void mainView_Load(object sender, EventArgs e)
+        {
+            this.Hide();
+            logInView logIn = new logInView();
+            if(logIn.ShowDialog() == DialogResult.OK)
+            {
+                this.Show();
+            }
+            else {
+                this.Close(); 
+            }
+        }
     }
 }

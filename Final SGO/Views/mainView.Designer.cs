@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnUsers = new System.Windows.Forms.Button();
             this.btnSignOut = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -36,7 +37,6 @@
             this.btnProducts = new System.Windows.Forms.Button();
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnUsers = new System.Windows.Forms.Button();
             this.pnlMenu.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +56,22 @@
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(160, 533);
             this.pnlMenu.TabIndex = 0;
+            // 
+            // btnUsers
+            // 
+            this.btnUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnUsers.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnUsers.FlatAppearance.BorderSize = 0;
+            this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsers.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
+            this.btnUsers.ForeColor = System.Drawing.Color.White;
+            this.btnUsers.Location = new System.Drawing.Point(0, 455);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.Size = new System.Drawing.Size(160, 39);
+            this.btnUsers.TabIndex = 6;
+            this.btnUsers.Text = "**Usuarios**";
+            this.btnUsers.UseVisualStyleBackColor = false;
+            this.btnUsers.Visible = false;
             // 
             // btnSignOut
             // 
@@ -156,22 +172,6 @@
             this.label1.Text = "**LOGO**";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnUsers
-            // 
-            this.btnUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnUsers.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnUsers.FlatAppearance.BorderSize = 0;
-            this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsers.Font = new System.Drawing.Font("Nirmala UI", 9.75F);
-            this.btnUsers.ForeColor = System.Drawing.Color.White;
-            this.btnUsers.Location = new System.Drawing.Point(0, 455);
-            this.btnUsers.Name = "btnUsers";
-            this.btnUsers.Size = new System.Drawing.Size(160, 39);
-            this.btnUsers.TabIndex = 6;
-            this.btnUsers.Text = "**Usuarios**";
-            this.btnUsers.UseVisualStyleBackColor = false;
-            this.btnUsers.Visible = false;
-            // 
             // mainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,6 +182,7 @@
             this.Name = "mainView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.mainView_Load);
             this.pnlMenu.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
             this.ResumeLayout(false);
