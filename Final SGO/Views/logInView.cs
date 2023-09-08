@@ -31,5 +31,10 @@ namespace Final_SGO.Views
                 MessageBox.Show("Error al iniciar sesión. Por favor intentelo de nuevo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.Cancel;
+        }
     }
 }
